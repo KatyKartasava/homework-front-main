@@ -4,17 +4,14 @@ type AddressType = {
     city: string; // ПОДПРАВЛЯЕМ any
 };
 
-export type UserType = {
+type UserType = {
     id: number
     name: string
     age: number
-    address: {
-        street: string; // ПОДПРАВЛЯЕМ any
-        city: string; // ПОДПРАВЛЯЕМ any
-    }
+    address: AddressType
 };
 
-export type UserListPropsType = {
+type UserListPropsType = {
     users: Array<UserType>; // ПО МОЕМУ ЧЕГО-ТО НЕ ХВАТАЕТ...
 };
 
